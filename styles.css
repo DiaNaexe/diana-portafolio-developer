@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+background-color: white;
+
+}
+/* HERO con imagen */
+.hero {
+  height: 130vh;
+  background: url("images/bg.jpg") no-repeat center/cover;
+  background-size: cover;
+  background-position: center top;
+  background-repeat:  no-repeat;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  justify-content: flex-start;
+  padding-left: 60px;
+}
+
+/* Capa oscura encima (efecto pro 🔥) */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+ 
+}
+
+/* Asegura que el contenido esté encima */
+.navbar,
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 15px 40px 100px;
+  box-sizing: border-box;
+
+}
+
+.menu a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* CONTENIDO PRINCIPAL */
+.hero-content {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 60px;
+  position: relative;
+  z-index: 3;
+  max-width: 500px;
+ text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+}
+.hero-content h3{
+  font-size: 30px;
+  margin-top: -40px;
+}
+.hero-content p {
+  margin: 20px 0;
+  color: #ddd;
+}
+
+/* BOTÓN */
+.hero button {
+  padding: 12px 25px;
+  background: linear-gradient(45deg, purple, orchid);
+  border: none;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.hero button:hover{
+transform: translateY(-2px); 
+  box-shadow: 0 7px 8px rgba(52, 50, 50, 0.8);
+}
+/*---------------------------------------------------------------------------------------*/
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #444;
+}
+.about{
+   background: white;
+  padding: 1rem;
+    display: grid;
+  gap: 1rem;
+ margin-top: 30px;
+ margin-bottom:  30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.logo-small{
+  max-width: 100px;
+  width: 20px;
+}
+.skill{
+  background: white;
+  padding: 1rem;
+ border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row; 
+    align-items: center;    
+    gap: 10px;
+}
+.skill-card img{
+  width: 140px;
+}
+.skill-group{
+  margin-bottom: 40px;
+}
+.skill-group h3{
+  text-align: center !important;
+  margin-bottom: 15px;
+ font-weight: 600;
+}
+.projects {
+  display: grid;
+  gap: 1rem;
+}
+
+.project {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
