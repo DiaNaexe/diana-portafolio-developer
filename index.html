@@ -2,13 +2,17 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Portafolio</title>
+  <title>Diana Cisneros</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
  <header class="hero">
-
+  <div id="particles-js"></div>
   <nav class="navbar">
     <div class="logo">Diana</div>
     <div class="menu">
@@ -18,9 +22,12 @@
       <a href="#contact">Contact</a>
     </div>
   </nav>
+<div class="profile-container">
+  <img src="images/dianacisnerosimage.jpeg" alt="Diana Cisneros" class="profile-image">
 
+</div>
   <div class="hero-content">
-    <h1>Diana Cisneros</h1>
+    <h1 class="typing">Diana Cisneros</h1>
     <h3>Informatics Engineer</h3> 
     <p>
      Desarrolladora .NET enfocada en crear soluciones funcionales, escalables y con gran experiencia de usuario.
@@ -124,8 +131,30 @@ funcionales y escalables, sino también visualmente atractivas y centradas en la
   <section class="projects">
     <h2>Proyectos</h2>
     <div class="project">
-      <h3>Proyecto 1</h3>
-      <p>Descripción de tu proyecto.</p>
+      <h3>CRM / Sistema Administrativo Empresarial</h3>
+      <p>Tecnologías: C#, .NET MAUI, SQL, MVVM, REST APIs.
+        
+      </p>
+      <p>Aplicación empresarial enfocada en la gestión administrativa y operativa de procesos internos.
+        </p>
+        <h4>Funcionalidades</h4>
+        <ul>
+        <li>Gestión de usuarios y permisos</li>
+       <li>Administracion de operaciones</li>
+       <li>Gestión de clientes</li>
+     
+        </ul>
+<h4>Mi contribución</h4>
+<ul>
+<li>Desarrollo de interfaces XAML</li>
+<li>Implementación de arquitectura MVVM</li>
+<li>Desarrollo de menú lateral multinivel desplegable con desglose de submódulos</li>
+<li>Optimización de navegación y experiencia de usuario</li>
+<li>Integración con APIs REST</li>
+<li>Implementacion de navegación dinámica entre modulos</li>
+<li>Corrección de bugs y mejoras continuas</li>
+</ul>
+
     </div>
 
     <div class="project">
@@ -139,13 +168,18 @@ funcionales y escalables, sino también visualmente atractivas y centradas en la
 
   <section id="contact" class="contact">
     <h2>Contacto</h2>
-    <p>Email: diana.cisz17@gmail.com</p>
-    <p>Teléfono: 939 158 9831 </p>
+    <p><i class="fa-solid fa-envelope"></i> diana.cisz17@gmail.com</p>
+    <p><i class="fa-solid fa-phone"></i> 393 158 9831</p>
+    <p>
+      <a href="https://www.linkedin.com/in/diana-cisneros-8199601a6/" target="_blank">
+      <i class="fa-brands fa-linkedin"></i> Linkedin
+    </p>
   </section>
 
   <footer>
     <p>© 2026 Diana Cisneros</p>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script src="particles.js"></script>
 </body>
-</html>
+</html> 
